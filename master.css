@@ -1,0 +1,471 @@
+body{
+background:#ffffff;
+margin: 0px;
+
+}
+header{
+	display:flex; 
+	justify-content: space-between;
+	background:#ffffff; 
+} 
+.logo{ 
+	display:flex; 
+    align-items: center;
+}
+.logo-img{
+	width:250px;
+	height:150px;
+}
+.logo-title{
+	color: #759;
+	font-size: 42px;
+	font-weight:300px;
+}
+.hor-menu ul li{
+	list-style-type: none;
+	float: left;
+	padding: 15px 30px;
+	color:#fff;
+}
+.hor-menu ul li a{
+	color: #759;
+	text-decoration: none;
+	padding: 10px 10px 15px 15px;
+	transition:all 0.5s;
+    position: relative;
+    vertical-align: middle;
+
+}
+.hor-menu ul li a:hover {
+	border-right: 5px solid #3333FF;
+	border-left: 5px solid #3333FF;
+}
+.call-img{
+	width:100px;
+	height:100px;
+}
+.hor-menu{
+	display: flex;
+}
+.wrapper{
+    
+    
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    background:#ffffff;
+}
+.modal{
+	color: #759;
+}
+.slider{
+	color: #759;
+	
+}
+.samocat{
+	color: #759;
+    padding: 5px 20px 5px 20px;
+}
+.samocat-img{
+	height: 200px;
+}
+.giroscuter{
+	color: #759;
+    padding: 5px 20px 5px 20px;
+}
+.sygvey{
+	color: #759;
+    padding: 5px 20px 5px 20px;
+}
+.table{
+	
+	float: right;
+    
+    }
+.samocatf-img{
+	height: 100px;
+}
+.gg{
+	color: #759;
+}
+.gg-img{
+	height:50px;
+
+}
+.gg1-img{
+	height:50px;
+}
+.gg2-img{
+	height:50px;
+
+}
+.gg3-img{
+	height:50px;
+}
+.hom{
+
+}
+
+.topbutton{
+    width: 70px;
+    height: 70px;
+    border: 2px solid #ccc;
+    background: #f7f7f7;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.carousel-wrapper {
+height: 200px;
+position: relative;
+width: 400px;
+margin: 50px auto;
+
+background-color: #ffffff;
+}
+.carousel-item {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+padding: 25px 50px;
+opacity: 0;
+transition: all 0.5s ease-in-out;
+margin: auto;
+}
+/* Слайд */
+.arrow {
+border: solid #040014;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 12px;
+}
+/* Предыдущий слайд */
+.arrow-prev {
+left: -30px;
+position: absolute;
+top: 50%;
+transform: translateY(-50%) rotate(135deg);
+}
+/* Следующий слайд */
+.arrow-next {
+right: -30px;
+position: absolute;
+top: 50%;
+transform: translateY(-50%) rotate(-45deg);
+}
+
+[id^="item"] {
+display: none;
+}
+.item-1 {
+z-index: 2;
+opacity: 1;
+}
+*:target ~ .item-1 {
+opacity: 0;
+}
+#item-1:target ~ .item-1 {
+opacity: 1;
+}
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3,
+#item-4:target ~ .item-4 {
+z-index: 4;
+opacity: 1;
+}
+.slider {
+font-size: 19px;
+}
+.wrapper {
+    max-width: 1800px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap:wrap;
+    font-family: 'Urbanist',sans-serif;
+}
+.future-wrapper, .list-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.future-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+.list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.future-wrapper img {
+    height: 350px;
+}
+.list-item {
+    width: auto;
+    height: 150px;
+    margin-right: 50px;
+}
+.list-item:last-child {
+    margin-right: 0;
+}
+.list-item5, .list-item6, .list-item7 {
+    margin-bottom: 170px;
+    display: flex;
+}
+.list-item img {
+    height: 200px;
+    width: auto;
+    display: flex;
+
+}
+.list-item p {
+    margin-bottom: 20px;
+}
+.products{
+  border-radius: 20px;
+        float: none;
+        height: 250px;
+  width: 250px;
+      }
+
+      .productsNum{
+        transition: 1s;
+      }
+
+      .blocks{
+        display: flex;
+        margin-bottom: 100px;
+      }
+
+       .productsNum:hover{
+        transform: scale(1.1);
+      }
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+  }
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4  {
+    z-index: 3;
+    opacity: 1;
+  }
+}
+
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --black: #3a3a3a;
+  --white: #fff;
+  --green: #49b293;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}*/
+
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  color: var(--black);
+  font: 1rem/1.3 sans-serif;
+}
+
+.author-archive {
+  padding: 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 a {
+  transition: all 0.1s;
+}
+
+h1 a:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+
+/* FILTERS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.filters {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filters * {
+  display: inline-block;
+}
+
+.filters label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  border-radius: 2rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.filters label:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+
+/* FILTERED ELEMENTS (POSTS)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.posts {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.posts .post {
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.posts .post-title {
+  font-size: 1.3rem;
+}
+
+.posts .post-title:hover {
+  text-decoration: underline;
+}
+
+.posts figcaption {
+  padding: 1rem;
+}
+
+.posts .post-categories {
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.posts .post-categories * {
+  display: inline-block;
+}
+
+.posts .post-categories li {
+  margin-bottom: 0.2rem;
+}
+
+.posts .post-categories a {
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid;
+  line-height: normal;
+  transition: all 0.1s;
+}
+
+.posts .post-categories a:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+
+/* FILTERING RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All"]:checked ~ .filters [for="All"],
+[value="Samokat"]:checked ~ .filters [for="Samokat"],
+[value="Sigvey"]:checked ~ .filters [for="Sigvey"],
+[value="Giro"]:checked ~ .filters [for="Giro"]
+/*[value="WordPress"]:checked ~ .filters [for="WordPress"],
+[value="Slider"]:checked ~ .filters [for="Slider"],
+[value="fullPage.js"]:checked ~ .filters [for="fullPage.js"]*/ {
+  background: var(--green);
+  color: var(--white);
+}
+
+[value="All"]:checked ~ .posts [data-category] {
+  display: block;
+}
+
+[value="Samokat"]:checked ~ .posts .post:not([data-category~="Samokat"]),
+[value="Sigvey"]:checked ~ .posts .post:not([data-category~="Sigvey"]),
+[value="Giro"]:checked ~ .posts .post:not([data-category~="Giro"])
+/*[value="WordPress"]:checked ~ .posts .post:not([data-category~="WordPress"]),
+[value="Slider"]:checked ~ .posts .post:not([data-category~="Slider"]),
+[value="fullPage.js"]:checked ~ .posts .post:not([data-category~="fullPage.js"])*/ {
+  display: none;
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  font-size: 1rem;
+  padding: 0 1.5rem;
+  text-align: right;
+}
+
+footer span {
+  color: #e31b23;
+}
+
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 900px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 14px;
+  }
+
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
